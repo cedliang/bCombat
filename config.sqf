@@ -9,11 +9,12 @@ bcombat_enable = true;								// (Boolean) Toggle feature on / off
 
 // Description: use BIS native close-cullet detection (true) or bDetect (false)
 
-bcombat_ballistics_native_handler = false;			// (Boolean) Toggle feature on / off
+bcombat_ballistics_native_handler = true;			// (Boolean) Toggle feature on / off
 
 // Description: toggle debugging information on (true) or off (false)
 
 bcombat_dev_mode = false;							// (Boolean) Toggle feature on / off
+bcombat_debug_enable = false;
 bcombat_debug_levels = [];							// Debug levels
 bcombat_debug_chat = true;							// Debug in chat
 
@@ -119,7 +120,7 @@ bcombat_allow_fast_rotate = false;					// (Boolean) Toggle feature on / off
 // Triggered: when morale is broken
 // Effect: unit leaves formation and moves away. As long as group is not destroyed it will join it back after some morale recovery.
 
-bcombat_allow_fleeing = true; 						// (Boolean) Toggle feature on / off
+bcombat_allow_fleeing = false; 						// (Boolean) Toggle feature on / off
 
 // Description: surrender behaviour
 // Triggered: seldom, when morale is broken and fleeing
@@ -174,7 +175,7 @@ bcombat_allow_hearing_grenade_distance = 250;		// (Meters) Max. distance for gre
 // Known issues: possible frendly fire issues
 
 bcombat_allow_grenades = true;						// (Boolean) Toggle feature on / off
-bcombat_grenades_additional_number = 1; 			// (Number) number of additional grenades to be automatically ADDED to unit loadout
+bcombat_grenades_additional_number = 0; 			// (Number) number of additional grenades to be automatically ADDED to unit loadout
 bcombat_grenades_distance = [6,45,6]; 				// (Array) [ minimum distance, maximum distance, min. distance from target for friendly units] 
 bcombat_grenades_timeout = [15, 10];				// (Array) [ unit timeout, group timeout ]
 bcombat_grenades_no_los_only = true; 				// (Boolean) Whether enemy should be out of line-of-sight, for a unit to throw grenade
@@ -274,8 +275,8 @@ bcombat_stance_prone_min_distance = 50;    			// (Meters)
 // Effect: 
 
 bcombat_skill_multiplier = 1;    					// (0-1) Unit skill is multiplied by this value. It affects accuracy as well. Allowed range is 0 to 1
-bcombat_skill_linearity = 1.25;    					// (0-1) linearity of skill: 2 means quadratic
-bcombat_skill_min_player_group = 0.5;				// (0-1) enforce minimum skill for units in player group 
+bcombat_skill_linearity = 1;    					// (0-1) linearity of skill: 2 means quadratic
+bcombat_skill_min_player_group = 0;				// (0-1) enforce minimum skill for units in player group 
 
 // Description: Toggles startup hint
 // Triggered: at mission start

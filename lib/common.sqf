@@ -909,10 +909,10 @@ bcombat_fnc_unit_initialize = {
 		_this setvariable [ "bcombat_eh_killed", _e ];
 	};
 
-	if( isNil { _this getvariable ["bcombat_eh_handledamage", nil ] } ) then {
-		_e = _this addEventHandler ["HandleDamage", bcombat_fnc_eh_handledamage]; 
-		_this setvariable ["bcombat_eh_handledamage", _e ];
-	};
+	//if( isNil { _this getvariable ["bcombat_eh_handledamage", nil ] } ) then {
+	//	_e = _this addEventHandler ["HandleDamage", bcombat_fnc_eh_handledamage]; 
+	//	_this setvariable ["bcombat_eh_handledamage", _e ];
+	//};
 	
 	_this setVariable ["bcombat_init_done", true ];
 	
